@@ -31,10 +31,10 @@ public class NewTest {
 	//  driver.manage().window().maximize();
 	  //WebElement Searchbox = driver.findElement(By.id("lst-ib"));
 	  
-	  driver.get("http://localhost:8094/spring-mvc-example/");
+	  driver.get("http://localhost:8080/BankExample/");
 	  String title = driver.getCurrentUrl();
 		System.out.println("Getting the title:"+title);
-		WebElement Searchbox = driver.findElement(By.name("userName"));
+		WebElement Searchbox = driver.findElement(By.name("User name"));
 		System.out.println("The value is:"+Searchbox);
 		//Searchbox.sendKeys("sudhaaug84@gmail.com");
 		Searchbox.sendKeys("abc");
